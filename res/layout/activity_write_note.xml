@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 头部的一些选择栏 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_write_note_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar_bg" >
+
+        <Button
+            android:id="@+id/activity_write_note_btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="123" />
+
+        <Button
+            android:id="@+id/activity_write_note_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="44dp"
+            android:layout_toLeftOf="@+id/activity_write_note_btn_camera"
+            android:text="Button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/list_item_normal" >
+
+        <RelativeLayout
+            android:id="@+id/activity_write_note_iv_show_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/activity_write_note_show_iv_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="1dp"
+                android:scaleType="fitStart"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/activity_write_note_show_iv_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="1dp"
+                android:scaleType="fitStart"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/activity_write_note_data_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_write_note_iv_show_rl"
+            android:background="#00000000"
+            android:gravity="top"
+            android:minLines="10" />
+    </RelativeLayout>
+
+</RelativeLayout>

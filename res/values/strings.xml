@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyNote</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="btn_delete_pressed_color">#000000</color>
+    <color name="btn_delete_normal_color">#ffffff</color>
+    <color name="btn_top_change_normal">#ffffff</color>
+    <color name="btn_top_change_pressed">#86868b</color>
+</resources>
